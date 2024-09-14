@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./task.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <img src="./Projectsimages/akashphoto.jpg" alt="" class="headimg" />
+                <p class="head">Akash</p>
+            </div>
+            <div class="menu-toggle" id="nav-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="./projects.html">My Projects</a></li>
+                <li><a href="./education.html">Education</a></li>
+                <li><a href="./achievement.html">Achievements</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="left">
+            <p class="welcome">WELCOME TO MY WORLD</p>
+            <h2>Hi, I'm <span>Akash Duhan</span></h2>
+            <h3>a Developer</h3>
+            <p class="para">
+                I am pursuing my <span>full stack python course</span> from Qspiders
+                Gurugram.
+            </p>
+        </div>
+        <div class="right">
+            <img src="./Projectsimages/akashphoto.jpg" alt="" class="mainimg" />
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

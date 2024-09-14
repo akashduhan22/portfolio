@@ -1,0 +1,270 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Added padding for spacing */
+  /* background-color: #222; Darker background for the nav bar */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 20px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+ul li {
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+ul a:hover {
+  background-color: #575757;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.headimg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid white; /* Border around profile image */
+}
+
+.head {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.mainimg {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white; /* Border around main image */
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Toggle animation */
+.menu-toggle.active div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 920px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    /* left: 0px; */
+    background-color: #000;
+    flex-direction: column;
+    width: 20%;
+    padding: 1rem;
+    z-index: 1;
+    margin: 0px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  ul li {
+    text-align: center;
+    margin: 0;
+  }
+
+  ul a {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid #444;
+  }
+
+  ul a:hover {
+    background-color: #575757;
+  }
+
+
+  @keyframes image{
+    from{
+      transform: scale(1.1);
+    }
+    to{
+      transform: scale(1);
+    }
+  }
+  
+}
+
+@media screen and (max-width: 460px) {
+  .mainimg {
+    height: 250px;
+    width: 250px;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-top: 50px;
+}
+
+.left {
+  margin-left: 20px;
+}
+
+.welcome {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 20px 20px 20px 0px;
+}
+span {
+  color: red;
+  /* animation: nam 2s normal 0s infinite normal forwards; */
+  animation-name: nam;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes nam {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.para {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+
+.mainimg{
+  height: 400px;
+  width: 400px;
+  margin-right: 50px;
+  border: 10px solid white;
+  /* border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white;
+  border-right: 10px solid white; */
+  /* border-color: white;
+  border-style: double; */
+  border-radius: 50%;
+  opacity: 0.8;
+  animation-name: image;
+  animation-duration: 0.5s;
+  transition: all 0.5s 0s ease-in;
+}
+
+.mainimg:hover {
+  transform: scale(1.2);
+  border: 1px solid white;
+  opacity: 1;
+}
+
+@keyframes image{
+  from{
+    transform: scale(1.2);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+
+
+
+

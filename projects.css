@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.projectheading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.heading{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    padding-bottom:10px ;
+}
+
+.para{
+    color: red;
+    font-size: 20px;
+    animation-name: nam;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes nam {
+    0% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top:20px ;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* border: 2px solid white; */
+    width: 400px;
+    padding: 20px;
+    /* height: 200px; */
+    
+    animation-name: block;
+    animation-duration: 0.5s;
+
+}
+
+@keyframes block{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.link{
+    text-decoration: none; 
+}
+
+.title{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.image{
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s 0s ease-in;
+}
+
+.image:hover{
+    transform: scale(1.05);
+    
+}

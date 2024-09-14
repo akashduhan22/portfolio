@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./task.css" />
+    <link rel="stylesheet" href="./education.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+          <div class="nav">
+              <img src="./Projectsimages/akashphoto.jpg" alt="" class="headimg" />
+              <p class="head">Akash</p>
+          </div>
+          <div class="menu-toggle" id="nav-toggle">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+          <ul id="nav-menu">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./skills.html">Skills</a></li>
+              <li><a href="./projects.html">My Projects</a></li>
+              <li><a href="./education.html">Education</a></li>
+              <li><a href="./achievement.html">Achievements</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <section class="block">
+      <div class="education">
+        <p class="heading">Education</p>
+        <div class="line"></div>
+      </div>
+      <div class="container">
+        <div class="box1 box">
+            <div class="inside">
+                <p class="innertext">I am pursuing my <span>Full Stack python course</span></p>
+              </div>
+           <p class="year">2024</p>
+          <p class="degree">Full Stack Python Development</p>
+          <p class="source">Qspiders</p>
+          
+        </div>
+        <div class="box2 box">
+            <div class="inside">
+                <p class="innertext">I have completed my <span>Master's Degree with 70%</p>
+              </div>
+          <p class="year">2022-2024</p>
+          <p class="degree">Masters of Computer Applications</p>
+          <p class="source">Chaudhary Devi Lal University</p>
+        </div>
+        <div class="box3 box">
+            <div class="inside">
+                <p class="innertext">I have completed my <span>Diploma with 60%</span></p>
+              </div>
+          <p class="year">2021-2022</p>
+          <p class="degree">Diploma of Computer Applications</p>
+          <p class="source">Hartron</p>
+        </div>
+        <div class="box4 box">
+            <div class="inside">
+                <p class="innertext">I have completed my <span>Bachelor's Degree with 65%</span></p>
+              </div>
+          <p class="year">2018-2021</p>
+          <p class="degree">Bachelors of Computer Science</p>
+          <p class="source">Chaudhary Ranbir Singh University</p>
+        </div>
+        <div class="box5 box">
+            <div class="inside">
+                <p class="innertext">I have completed my <span>Higher Secondary Education with 77%</span></p>
+              </div>
+          <p class="year">2017-2018</p>
+          <p class="degree">12th(Non-Medical) </p>
+          <p class="source">Supreme Sr. Sec. School</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.getElementById('nav-toggle').addEventListener('click', function() {
+          document.getElementById('nav-menu').classList.toggle('active');
+      });
+  </script>
+  </body>
+</html>
